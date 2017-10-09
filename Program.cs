@@ -15,14 +15,18 @@ namespace Primero
             
             Console.WriteLine("Hola a todos!");
             Console.WriteLine("Cómo les va?!");
-            Console.WriteLine("Mi nombre es: " + nombre);
+            Console.WriteLine("Cuál es tu nombre?");
+            nombre = Console.ReadLine();
+            Console.WriteLine("Tu nombre es: " + nombre);
+            Console.WriteLine("Cuál es tu edad?");
+            edad = int.Parse(Console.ReadLine()); //Convert.ToInt32(...)
             if(edad >= 18)
             {
-                 Console.WriteLine("Soy mayor de edad.");
+                 Console.WriteLine("Sos mayor de edad.");
             }
             else
             {
-                Console.WriteLine("Soy menor de edad");
+                Console.WriteLine("Sos menor de edad");
             }
 
             //Vemos como funciona el switch
